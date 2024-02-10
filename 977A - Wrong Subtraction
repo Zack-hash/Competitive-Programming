@@ -1,0 +1,7 @@
+value, div = map(int,input().split(' '))
+for i in range(div):
+    if value % 10 ==0:
+        value /=10
+    else:
+        value -=1
+print(int(value))
