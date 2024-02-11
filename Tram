@@ -1,0 +1,9 @@
+n = int(input())
+maxs=[]
+for i in range(n):
+    left, entered= map(int,input().split())
+    if i ==0:
+        maxs.append(entered)
+    else:
+        maxs.append(maxs[-1]- left + entered)
+print(max(maxs))
